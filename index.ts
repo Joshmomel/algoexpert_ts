@@ -1,5 +1,4 @@
-const printStr = (input: string) => {
-  return input
+export function kadanesAlgorithm(array: number[]) {
+  // Write your code here.
+  return -1;
 }
-
-console.log('hi ' + printStr('world'))
