@@ -19,4 +19,4 @@ ts-node index.ts
 
 
 # Discuss 
-🤔 My thoughts on some issue will be post in [Issues](https://github.com/Joshmomel/algoexpert_ts/issues?q=is%3Aissue+sort%3Aupdated-desc)
+🤔 My thoughts on some issues will be post in [Issues](https://github.com/Joshmomel/algoexpert_ts/issues?q=is%3Aissue+sort%3Aupdated-desc)
