@@ -10,19 +10,18 @@ export class LinkedList {
 
 export function removeDuplicatesFromLinkedList(linkedList: LinkedList) {
   const list: Array<number> = [linkedList.value];
-  let pointer = linkedList
+  let pointer = linkedList;
 
   while (pointer.next) {
     const v = pointer.next.value;
 
     if (!list.includes(v)) {
-      list.push(v)
-      pointer = pointer.next
-      continue
+      list.push(v);
+      pointer = pointer.next;
+      continue;
     }
 
-    pointer.next = pointer.next.next
-
+    pointer.next = pointer.next.next;
   }
 
   return linkedList;
