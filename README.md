@@ -7,7 +7,6 @@
 🚀 Solutions are stored under the src file.
 
 ### Language
-
 👨‍💻 [Typescript](https://www.typescriptlang.org/) is used mainly for this project
 
 ### run
