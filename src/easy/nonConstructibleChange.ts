@@ -5,7 +5,7 @@ export function nonConstructibleChange(coins: number[]) {
 
   for (let i = 0; i < sorted.length; i++) {
     if (sorted[i] > max + 1) return max + 1;
-    max +=  sorted[i];
+    max += sorted[i];
   }
 
   return max + 1;
