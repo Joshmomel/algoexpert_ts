@@ -11,8 +11,8 @@ const merge = <T>(left: T[], right: T[]): T[] => {
     if (left[0] < right[0]) arr.push(left.shift());
     else arr.push(right.shift());
   }
-  // @ts-ignore
-  return [...arr, ...left, ...right];
+
+  return [...arr, ...left, ...right] as T[];
 };
 
 console.log(mergeSort([5, 4, 3, 1, 2]));
