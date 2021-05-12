@@ -1,5 +1,6 @@
 export function cycleInGraph(edges: number[][]) {
   let v;
+  //Loop each node and DFS
   for (let i = 0; i < edges.length; i++) {
     v = nextHelper(i, edges, []);
     if (v[0] === v[v.length - 1] && v.length > 1) return true;
@@ -9,6 +10,7 @@ export function cycleInGraph(edges: number[][]) {
 }
 
 function nextHelper(current: number, edges: number[][], visit: number[]): number[] {
+  //cycle check
   if (visit.includes(current)) {
     visit.push(current);
     return visit;
@@ -16,6 +18,7 @@ function nextHelper(current: number, edges: number[][], visit: number[]): number
 
   visit.push(current);
 
+  //DFS: get the next linked value
   const next = edges[current];
   for (let i = 0; i < next.length; i++) {
     const v = nextHelper(next[i], edges, visit);
