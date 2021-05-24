@@ -14,7 +14,7 @@ export function numbersInPi(pi: string, numbers: string[]) {
     getMinSpace(pi, numberTable, dict, i);
   }
 
-  console.log('dict is', dict);
+  return dict[0] === Infinity ? -1 : dict[0]
 }
 
 function getMinSpace(pi: string, numberTable: NumberTable, dict: Dict, index: number):number {
